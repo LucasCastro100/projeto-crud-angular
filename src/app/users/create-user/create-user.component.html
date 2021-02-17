@@ -1,0 +1,19 @@
+<h3>Criar usuário</h3>
+
+<form>
+    <div class="row">
+        <div class="mb-3 col-md-6 col-12">
+            <label for="" class="form-label">Nome</label>
+            <input class="form-control" [(ngModel)]="request.name" name="name"> 
+          </div>
+
+        <div class="mb-3 col-md-6 col-12">
+            <label for="" class="form-label">Profissão</label>
+            <input class="form-control" [(ngModel)]="request.job" name="job">      
+        </div>
+
+        <div class="col-12 text-end">
+            <button (click)="gravar()" class="btn btn-dark">Criar</button>
+        </div>
+    </div>    
+</form>

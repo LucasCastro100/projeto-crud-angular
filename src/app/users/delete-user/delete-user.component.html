@@ -1,0 +1,20 @@
+<h3>Deseja excluir o usuário?</h3>
+
+<form *ngIf="user">
+    <div class="row">
+        <div class="mb-3 col-md-3 col-12">
+            <label for="" class="form-label">Código usuário</label>
+            <input class="form-control" name="name" value="{{user.id}}" readonly> 
+        </div>
+
+        <div class="mb-3 col-md-9 col-12">
+            <label for="" class="form-label">Nome</label>
+            <input class="form-control" name="name" value="{{user.first_name}} {{user.last_name}}" readonly> 
+        </div>
+
+        <div class="col-12 text-end">
+            <button (click)="apagar()" class="btn btn-dark confirmar">Confirmar</button>
+            <button (click)="cancelar()" class="btn btn-danger">Cancelar</button>
+        </div>
+    </div>    
+</form>

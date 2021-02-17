@@ -1,0 +1,23 @@
+.table-bordered>:not(caption)>*{
+    border-width: 1px !important;
+}
+
+#table-user thead th:last-child{
+    width: 95px !important;
+}
+
+#table-user td a i{
+    font-size: 20px;
+}
+
+#table-user td a:first-child:hover i{
+    color: #ffff00;
+}
+
+#table-user td a:last-child:hover i{
+    color: #ff0000;
+}
+
+.confirmar{
+    margin-right: 15px;
+}

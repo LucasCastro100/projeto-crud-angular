@@ -1,0 +1,19 @@
+<h3>Editar usuário</h3>
+
+<form *ngIf="request">
+    <div class="row">
+        <div class="mb-3 col-md-6 col-12">
+            <label for="" class="form-label">Nome</label>
+            <input class="form-control" [(ngModel)]="request.name" name="name"> 
+          </div>
+
+        <div class="mb-3 col-md-6 col-12">
+            <label for="" class="form-label">Profissão</label>
+            <input class="form-control" [(ngModel)]="request.job" name="job">      
+        </div>
+
+        <div class="col-12 text-end">
+            <button (click)="editar()" class="btn btn-dark">Editar</button>
+        </div>
+    </div>    
+</form>
